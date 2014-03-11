@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Natural language highlight</title>
+	<style type="text/css">
+		body {
+		  min-width: 205px;
+		}
+		button {
+			padding: 10px;
+			font-size: 100%;
+			-webkit-border-radius: 10px;
+		}
+		select {
+			padding: 5px;
+			-webkit-border-radius: 5px;
+		}
+		img { cursor:pointer; }
+		#refresh, #switch {display:none;}
+	</style>
+  </head>
+  <body>
+	<img src="refresh.png" align="right" id="refresh">
+	<form>
+	<strong id="mode">Mode:</strong>	
+	<div><input type=radio value=0 id="rad0" name="status"> <label for="rad0">Disabled</label></div>
+	<div><input type=radio value=1 id="rad1" name="status"> <label for="rad1">Colored</label></div>
+	<div><input type=radio value=2 id="rad2" name="status"> <label for="rad2">Monochrome</label></div>
+	<div><input type=radio value=3 id="rad3" name="status"> <label for="rad3">Strict</label></div>
+	<strong>By default:</strong>
+	<div><select name="default" id="def"><option value="1">enabled</option><option value="0">disabled</option></select></div>
+	<strong id="mode">Charsets:</strong>	
+	<div><input type=checkbox value="rus" id="rus" name="charset"> <label for="rus">Russian</label></div>
+	<div><input type=checkbox value="eng" id="eng" name="charset"> <label for="eng">English</label></div>
+	<button id="switch">disable for this website</button>
+	</form>
+	<script type="text/javascript" src="popup.js"></script>
+  </body>
+</html>
