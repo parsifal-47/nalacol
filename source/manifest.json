@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Natural language colorer",
-  "version": "0.1",
+  "short_name": "Nalacol",
+  "version": "0.2",
   
   "icons": {
     "128": "icon_128.png"
